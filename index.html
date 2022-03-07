@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Pasteleria</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<style>
+		.b-example-divider {
+			height: 3rem;
+			background-color: rgba(0, 0, 0, .1);
+			border: solid rgba(0, 0, 0, .15);
+			border-width: 1px 0;
+			box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+		}
+
+		.bi {
+			vertical-align: -.125em;
+			fill: currentColor;
+		}
+
+		.opacity-50 { opacity: .5; }
+		.opacity-75 { opacity: .75; }
+
+		.list-group {
+			width: auto;
+			max-width: 460px;
+			margin-top: 1rem;
+			margin-right: auto;
+			margin-bottom: 4rem;
+			margin-left: auto;
+		}
+
+		.form-check-input:checked + .form-checked-content {
+			opacity: .5;
+		}
+
+		.form-check-input-placeholder {
+			pointer-events: none;
+			border-style: dashed;
+		}
+		[contenteditable]:focus {
+			outline: 0;
+		}
+
+		.list-group-checkable {
+			display: grid;
+			gap: .5rem;
+			border: 0;
+		}
+		.list-group-checkable .list-group-item {
+			cursor: pointer;
+			border-radius: .5rem;
+		}
+		.list-group-item-check {
+			position: absolute;
+			clip: rect(0, 0, 0, 0);
+			pointer-events: none;
+		}
+		.list-group-item-check:hover + .list-group-item {
+			background-color: var(--bs-light);
+		}
+		.list-group-item-check:checked + .list-group-item {
+			color: #fff;
+			background-color: var(--bs-blue);
+		}
+		.list-group-item-check[disabled] + .list-group-item,
+		.list-group-item-check:disabled + .list-group-item {
+			pointer-events: none;
+			filter: none;
+			opacity: .5;
+		}
+
+	</style>
+</head>
+<body>
+
+	<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="javascript:void(0);">Pasteleria</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarCollapse">
+				<ul class="navbar-nav me-auto mb-2 mb-md-0">
+					<li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="index.html">Cliente</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="pastelero.html">Pastelero</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div class="container" style="margin-top:4rem;">
+
+		<div class="row">
+			<div class="col-lg-12 text-center">
+				<h4>Sabores del pastel</h4>
+			</div>
+			<div class="col-lg-12">
+				<div class="list-group list-group-checkable">
+					<input class="list-group-item-check" type="checkbox" name="listGroupCheckableRadios" id="listGroupCheckableRadios1" value="">
+					<label class="list-group-item py-3" for="listGroupCheckableRadios1">
+						Chocolate
+						<span class="d-block small opacity-50">$ 250.00 pesos</span>
+					</label>
+
+					<input class="list-group-item-check" type="checkbox" name="listGroupCheckableRadios" id="listGroupCheckableRadios2" value="">
+					<label class="list-group-item py-3" for="listGroupCheckableRadios2">
+						Tres leches
+						<span class="d-block small opacity-50">$ 250.00 pesos</span>
+					</label>
+
+					<input class="list-group-item-check" type="checkbox" name="listGroupCheckableRadios" id="listGroupCheckableRadios3" value="">
+					<label class="list-group-item py-3" for="listGroupCheckableRadios3">
+						Queso
+						<span class="d-block small opacity-50">$ 380.00 pesos</span>
+					</label>
+
+					<input class="list-group-item-check" type="checkbox" name="listGroupCheckableRadios" id="listGroupCheckableRadios4" value="">
+					<label class="list-group-item py-3" for="listGroupCheckableRadios4">
+						Vainilla 
+						<span class="d-block small opacity-50">$ 220.00 pesos</span>
+					</label>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-lg-12 text-center">
+				<h4>Adornos del pastel</h4>
+			</div>
+			<div class="col-lg-12">
+				<div class="list-group list-group-checkable">
+					<input class="list-group-item-check" type="checkbox" name="listGroupCheckableRadios" id="listGroupCheckableRadios1" value="">
+					<label class="list-group-item py-3" for="listGroupCheckableRadios1">
+						Betun
+						<span class="d-block small opacity-50">$ 50.00 pesos</span>
+					</label>
+
+					<input class="list-group-item-check" type="checkbox" name="listGroupCheckableRadios" id="listGroupCheckableRadios2" value="">
+					<label class="list-group-item py-3" for="listGroupCheckableRadios2">
+						Durazno
+						<span class="d-block small opacity-50">$ 30.00 pesos</span>
+					</label>
+
+					<input class="list-group-item-check" type="checkbox" name="listGroupCheckableRadios" id="listGroupCheckableRadios3" value="">
+					<label class="list-group-item py-3" for="listGroupCheckableRadios3">
+						Fresa
+						<span class="d-block small opacity-50">$ 90.00 pesos</span>
+					</label>
+
+					<input class="list-group-item-check" type="checkbox" name="listGroupCheckableRadios" id="listGroupCheckableRadios4" value="">
+					<label class="list-group-item py-3" for="listGroupCheckableRadios4">
+						Chispas 
+						<span class="d-block small opacity-50">$ 45.00 pesos</span>
+					</label>
+
+					<input class="list-group-item-check" type="checkbox" name="listGroupCheckableRadios" id="listGroupCheckableRadios4" value="">
+					<label class="list-group-item py-3" for="listGroupCheckableRadios4">
+						Zarzamora 
+						<span class="d-block small opacity-50">$ 75.00 pesos</span>
+					</label>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="py-5 text-center">
+					<img class="d-block mx-auto mb-4" src="/docs/5.1/assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
+					<h2>Por favor llene este formulario</h2>
+					<p class="lead">Para finalizar su pedido es necesario llenar este formulario</p>
+				</div>
+
+				<div class="row g-5">
+					<div class="col-md-5 col-lg-4 order-md-last">
+						<h4 class="d-flex justify-content-between align-items-center mb-3">
+							<span class="text-primary">Tu pastel</span>
+						</h4>
+						<ul class="list-group mb-3">
+							<li class="list-group-item d-flex justify-content-between lh-sm">
+								<div>
+									<h6 class="my-0">Sabor del pastel</h6>
+									<small class="text-muted">Chocolate</small>
+								</div>
+								<span class="text-muted">$ 250.00 pesos</span>
+							</li>
+							<li class="list-group-item d-flex justify-content-between lh-sm">
+								<div>
+									<h6 class="my-0">Adorno del pastelt</h6>
+									<small class="text-muted">Betun y durazno</small>
+								</div>
+								<span class="text-muted">$ 80.00 pesos</span>
+							</li>
+							<li class="list-group-item d-flex justify-content-between">
+								<span>Total</span>
+								<strong>$ 330.00 pesos</strong>
+							</li>
+						</ul>
+					</div>
+					<div class="col-md-7 col-lg-8">
+						<h4 class="mb-3">Billing address</h4>
+						<form class="needs-validation" novalidate>
+							<div class="row g-3">
+								<div class="col-sm-6">
+									<label for="firstName" class="form-label">Nombre</label>
+									<input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+									<div class="invalid-feedback">
+										
+									</div>
+								</div>
+
+								<div class="col-sm-6">
+									<label for="lastName" class="form-label">Telefono</label>
+									<input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+									<div class="invalid-feedback">
+										Valid last name is required.
+									</div>
+								</div>
+
+								<div class="col-12">
+									<label for="username" class="form-label">Corre electronico</label>
+									<input type="email" class="form-control" id="lastName" placeholder="" value="" required>
+									<div class="invalid-feedback">
+										Valid last name is required.
+									</div>
+								</div>
+							</div>
+
+							<hr class="my-4">
+
+							<button class="w-100 btn btn-primary btn-lg" >Hacer pedido</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+
+
+		<footer class="my-5 pt-5 text-muted text-center text-small">
+			<p class="mb-1">&copy; 2022 Pasteleria</p>
+		</footer>
+	</div>
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</html>
